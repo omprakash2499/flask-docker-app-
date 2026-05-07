@@ -1,10 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Flask Docker App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpSkill DevOps Training</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0d1b2a, #1b263b);
+            color: white;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .btn-custom {
+            background-color: #ffc107;
+            color: black;
+            font-weight: bold;
+        }
+
+        .course-card {
+            transition: 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .cta {
+            background: #1b263b;
+            color: white;
+            padding: 60px 0;
+        }
+
+        footer {
+            background: #0d1b2a;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Flask App Running in Docker</h1>
-    <p>This is your first containerised web app.</p>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">UpSkill</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero text-center">
+    <div class="container">
+        <h1>Build Your Career in Cloud & DevOps</h1>
+        <p>Master AWS, Azure, Docker, Kubernetes & DevOps with hands-on training</p>
+        <a href="#courses" class="btn btn-custom mt-3 px-4 py-2">Get Started</a>
+    </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses" class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-5">Our Programs</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card course-card shadow p-4">
+                    <i class="bi bi-cloud fs-1 text-primary"></i>
+                    <h4 class="mt-3">AWS Cloud</h4>
+                    <p>EC2, S3, IAM, VPC, Load Balancing & real deployments</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card course-card shadow p-4">
+                    <i class="bi bi-gear fs-1 text-success"></i>
+                    <h4 class="mt-3">DevOps</h4>
+                    <p>Docker, Jenkins, CI/CD, Terraform, Kubernetes</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card course-card shadow p-4">
+                    <i class="bi bi-microsoft fs-1 text-info"></i>
+                    <h4 class="mt-3">Azure</h4>
+                    <p>Azure services, networking, VMs & architecture</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="py-5 bg-light text-center">
+    <div class="container">
+        <h2>Why Choose Us?</h2>
+        <p class="mt-3">
+            We provide hands-on, real-world training with industry tools and career-focused learning.
+        </p>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta text-center">
+    <div class="container">
+        <h2>Start Your Tech Career Today</h2>
+        <a href="#" class="btn btn-warning mt-3 px-4 py-2">Contact Us</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center">
+    <p>© 2026 UpSkill Training</p>
+</footer>
+
 </body>
 </html>
